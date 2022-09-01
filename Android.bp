@@ -8,11 +8,12 @@ soong_namespace {
 android_app_import {
 	name: "MotoDolbyV3",
 	owner: "motorola",
-	apk: "proprietary/system/app/MotoDolbyV3/MotoDolbyV3.apk",
+	apk: "proprietary/system_ext/app/MotoDolbyV3/MotoDolbyV3.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -26,3 +27,4 @@ android_app_import {
 	privileged: true,
 	system_ext_specific: true,
 }
+
